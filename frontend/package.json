@@ -2,10 +2,6 @@
   "name": "weatherapp-frontend",
   "version": "0.0.1",
   "description": "Weatherapp exercise frontend",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mrako/weatherapp.git"
-  },
   "author": "Marko Klemetti <marko.klemetti@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
