@@ -3,7 +3,7 @@ services:
 # Setup backend
     backend:
         #backend image name
-        image: playground-web-backend:latest
+        image: weatherapp_backend:latest
         build:
             context: ./backend
             dockerfile: ./backend.Dockerfile
@@ -16,7 +16,7 @@ services:
 
     # Setup frontend
     frontend:
-        image: playground-web-frontend:latest
+        image: weatherapp_frontend:latest
         build:
             context: ./frontend
             dockerfile: ./frontend.Dockerfile
