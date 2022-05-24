@@ -2,6 +2,7 @@ version: '3.8'
 services:
 # Setup backend
     backend:
+        #backend image name
         image: playground-web-backend:latest
         build:
             context: ./backend
@@ -21,4 +22,7 @@ services:
             dockerfile: ./frontend.Dockerfile
         ports:
             - '8000:8000'
+        volumes:
+            - /frontend:/app
+            - /app/node_modules
         command: npm start
