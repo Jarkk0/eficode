@@ -1,0 +1,20 @@
+{
+  "name": "eficode",
+  "version": "1.0.0",
+  "description": "front and backend",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "cd frontend; npm start",
+    "backend": "cd backend; nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jarkk0/eficode.git"
+  },
+  "author": "Jarkko Peltonen",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Jarkk0/eficode/issues"
+  },
+  "homepage": "https://github.com/Jarkk0/eficode#readme"
+}
