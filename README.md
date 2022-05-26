@@ -33,10 +33,10 @@ Here are some things in different categories that you can do to make the app bet
 * The developers are still keen to run the app and its pipeline on their own computers. Share the development files for the container by using volumes, and make sure the containers are started with a command enabling hot reload.
 
 * How I make this work:
-`docker build –file=frontend/frontend.dockerfile -t weatherapp_frontend . `
-̣`gradle build`
-`docker build –file=backend/backend -t  weatherapp_backend .`
-`Docker-compose -f docker-compose.yml up`
+1 `docker build –file=frontend/frontend.dockerfile -t weatherapp_frontend . `
+̣2 `gradle build`
+3 `docker build –file=backend/backend -t  weatherapp_backend .`
+4 `Docker-compose -f docker-compose.yml up`
 
 ### Cloud
 
