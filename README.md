@@ -38,6 +38,8 @@ Here are some things in different categories that you can do to make the app bet
 3 `docker build –file=backend/backend -t  weatherapp_backend .`
 4 `Docker-compose -f docker-compose.yml up`
 
+then localhost:8000
+
 ### Cloud
 
 *The biggest trend of recent times is developing, deploying and hosting your applications in cloud. Knowing cloud -related technologies is essential for modern IT specialists.*
