@@ -1,11 +1,7 @@
 ---
-- hosts: all
+- hosts: myhost
   become: true
-  vars:
-    container_count: 4
-    default_container_name: docker
-    default_container_image: ubuntu
-    default_container_command: sleep 1d
+
 
   tasks:
     - name: Install aptitude
@@ -46,16 +42,38 @@
     - name: Install Docker Module for Python
       pip:
         name: docker
-
+##create backend docker
     - name: Pull default Docker image
       community.docker.docker_image:
-        name: "{{ default_container_image }}"
+        name: weatherapp_backend:latest
         source: pull
 
     - name: Create default containers
       community.docker.docker_container:
-        name: "{{ default_container_name }}{{ item }}"
-        image: "{{ default_container_image }}"
-        command: "{{ default_container_command }}"
+        image: weatherapp_backend:latest
+        command: npm start 
         state: present
-      with_sequence: count={{ container_count }}
+
+##create backend docker
+    - name: Pull default Docker image
+      community.docker.docker_image:
+        name: weatherapp_backend:latest
+        source: pull
+
+    - name: Create default containers
+      community.docker.docker_container:
+        image: weatherapp_backend:latest
+        command: npm start 
+        state: present
+
+##create backend docker
+    - name: Pull default Docker image
+      community.docker.docker_image:
+        name: weatherapp_frontend:latest
+        source: pull
+
+    - name: Create default containers
+      community.docker.docker_container:
+        image: weatherapp_frontend:latest
+        command: npm start 
+        state: present
