@@ -13,7 +13,7 @@ services:
             - ./backend:/app
             - ./app/node_modules
         command: npm start  
-
+####
     # Setup frontend
     frontend:
         image: weatherapp_frontend:latest

@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Jarkk0/eficode/issues"
   },
-  "homepage": "https://github.com/Jarkk0/eficode#readme"
+  "homepage": "https://github.com/Jarkk0/eficode#readme",
+  "dependencies": {
+    "@aws-amplify/ui-react": "^2.18.2",
+    "aws-amplify": "^4.3.23"
+  }
 }
